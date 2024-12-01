@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1024.0" style="-fx-background-color: #FFF2EF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="search.Controllers.SearchView">
+    <AnchorPane layoutX="8.0" prefHeight="210.0" prefWidth="1024.0" style="-fx-background-color: #FFF2EF;">
+        <TextField fx:id="searchBox" layoutX="238.0" layoutY="166.0" prefHeight="50.0" prefWidth="605.0" style="-fx-background-radius: 25;" text="Want to know?...">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </TextField>
+        <Button fx:id="handleSearch" layoutX="736.0" layoutY="166.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="107.0" style="-fx-background-radius: 25;" text="Search">
+            <font>
+                <Font name="System Italic" size="17.0" />
+            </font>
+        </Button>
+        
+        <!-- Gambar -->
+        <ImageView fitHeight="165.0" fitWidth="217.0" layoutX="36.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/Icons/Frame - 1024.png" />
+            </image>
+        </ImageView>
+        
+        <Text fill="#eb696791" layoutX="198.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARI TAHU!">
+            <font>
+                <Font name="Liberation Serif Bold" size="32.0" />
+            </font>
+        </Text>
+    </AnchorPane>
+
+    <ListView fx:id="resultList" layoutX="23.0" layoutY="288.0" prefHeight="374.0" prefWidth="978.0" />
+    <AnchorPane layoutX="-2.0" layoutY="634.0" prefHeight="72.0" prefWidth="1027.0" style="-fx-background-color: #FFF2EF;" />
+    <MediaView fx:id="mediaView" fitHeight="274.0" fitWidth="478.0" layoutX="273.0" layoutY="296.0" />
+    <Button fx:id="clearButton" layoutX="940.0" layoutY="247.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="60.0" text="Clear" textOverrun="CENTER_ELLIPSIS" />
+</AnchorPane>
